@@ -45,9 +45,9 @@ export default [
         sourcemap: true,
       },
       {
-        file: pkg.main,
-        format: 'cjs',
-        sourcemap: true,
+        format: 'iife',
+        name: 'HtmlEncrypt',
+        file: 'dist/html-encrypt.iife.js',
       },
     ],
     plugins: [
@@ -66,7 +66,7 @@ export default [
       }),
       !isPro() &&
         livereload({
-          watch: ['dist', 'examples', 'src/**/*'],
+          watch: ['dist', 'examples', 'index.ts'],
           verbose: false,
         }),
       isPro() && terser(),

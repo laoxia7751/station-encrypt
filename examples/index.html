@@ -13,20 +13,15 @@
         padding: 0;
       }
     </style>
-    <iframe
-      src="./dist/index.html"
-      frameborder="0"
-      style="width: 100%; height: calc(100vh - 4px); overflow: hidden"
-    ></iframe>
 
+    <script src="./index.iife.js"></script>
     <script>
-      window.onload = function () {
-        fetch('./dist/index.html', {
-          cache: 'no-cache',
-        }).then(res => {
-          console.log(res);
-        });
-      };
+      new HtmlEncrypt({
+        publicUrl: './dist/',
+        homePage: 'index.html',
+        disabledSave: true,
+        disabledConsole: false,
+      });
     </script>
   </body>
 </html>
