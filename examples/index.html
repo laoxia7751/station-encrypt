@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>一个前端静态资源加密工具</title>
+    <title>使用示例</title>
   </head>
   <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-
-    <script src="./index.iife.js"></script>
+    <script src="./station-encrypt.min.js"></script>
     <script>
-      new HtmlEncrypt({
-        publicUrl: './dist/',
-        homePage: 'index.html',
+      new StationEncrypt({
+        // 静态资源根目录
+        publicUrl: '/examples/dist/',
+        // 首页文件名称
+        homePage: 'home.html',
+        // 是否禁止保存
         disabledSave: true,
+        // 是否禁止审查元素
         disabledConsole: false,
       });
     </script>

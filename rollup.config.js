@@ -34,7 +34,7 @@ export default [
     input: path.resolve('./index.ts'),
     output: [
       {
-        file: pkg.unpkg,
+        file: 'dist/station-encrypt.umd.js',
         format: 'umd',
         name: pkg.jsname,
         sourcemap: true,
@@ -46,8 +46,8 @@ export default [
       },
       {
         format: 'iife',
-        name: 'HtmlEncrypt',
-        file: 'dist/html-encrypt.iife.js',
+        name: 'StationEncrypt',
+        file: 'examples/station-encrypt.min.js',
       },
     ],
     plugins: [
