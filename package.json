@@ -1,13 +1,13 @@
 {
-  "name": "html-encrypt",
+  "name": "station-encrypt",
   "version": "0.0.1",
   "private": false,
-  "main": "dist/station-encrypt.min.j",
+  "main": "dist/station-encrypt.min.js",
   "module": "dist/station-encrypt.esm.js",
   "unpkg": "dist/station-encrypt.min.js",
   "jsdelivr": "dist/station-encrypt.min.js",
   "types": "dist/index.d.ts",
-  "jsname": "html-encrypt",
+  "jsname": "station-encrypt",
   "scripts": {
     "dev": " cross-env NODE_ENV=dev rollup -c -w",
     "build": "rm -rf ./dist && cross-env NODE_ENV=production rollup -c"
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laoxia7751/html-encrypt.git"
+    "url": "git+https://github.com/laoxia7751/station-encrypt.git"
   },
   "author": "xiajitao",
   "license": "MIT",

@@ -22,7 +22,7 @@
 
 1. 下载插件
 
-[下载地址](https://unpkg.com/html-encrypt@0.0.1/dist/html-encrypt.js)
+[下载地址](https://unpkg.com/station-encrypt@0.0.1/dist/station-encrypt.min.js)
 
 2. 初始化
 
@@ -50,9 +50,9 @@
   </head>
   <body>
         <!-- 下载的文件地址 -->
-        <script src="./html-encrypt.js"></script>
+        <script src="./station-encrypt.min.js"></script>
         <!-- 也可以通过cdn方式引入使用，插件未加载成功的话，页面不会渲染👇 -->
-        <!-- <script src="https://unpkg.com/html-encrypt@0.0.1/dist/html-encrypt.iife.js"></script> -->
+        <!-- <script src="https://unpkg.com/station-encrypt@0.0.1/dist/station-encrypt.min.js"></script> -->
         <script>
           new HtmlEncrypt({
               // 真实静态页面根目录
