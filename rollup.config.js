@@ -66,7 +66,7 @@ export default [
       }),
       !isPro() &&
         livereload({
-          watch: ['dist', 'examples', 'index.ts'],
+          watch: ['dist', 'docs', 'index.ts'],
           verbose: false,
         }),
       isPro() && terser(),
@@ -74,7 +74,7 @@ export default [
         serve({
           open: false,
           port: 9529,
-          contentBase: './examples/',
+          contentBase: './docs/',
           openPage: '/index.html',
         }),
     ],
