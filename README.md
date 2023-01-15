@@ -54,7 +54,7 @@
         <!-- 也可以通过cdn方式引入使用，插件未加载成功的话，页面不会渲染👇 -->
         <!-- <script src="https://unpkg.com/station-encrypt@0.0.1/dist/station-encrypt.min.js"></script> -->
         <script>
-          new HtmlEncrypt({
+          new StationEncrypt({
               // 真实静态页面根目录
               publicUrl: '/dist/',
               // 首页文件名称
