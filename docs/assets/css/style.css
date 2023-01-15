@@ -15,8 +15,9 @@
 p {
   margin: 0 auto;
   font-size: 18px;
+  color: #333;
   text-align: center;
-  font-weight: 600;
+  line-height: 2;
 }
 
 a {
