@@ -15,7 +15,7 @@
 
 # 在线演示
 
-[演示地址](https://laoxia7751.github.io/station-encrypt/examples/)
+[演示地址](https://laoxia7751.github.io/station-encrypt)
 
 
 # 快速使用
