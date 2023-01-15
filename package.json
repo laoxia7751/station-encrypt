@@ -10,7 +10,7 @@
   "jsname": "html-encrypt",
   "scripts": {
     "dev": " cross-env NODE_ENV=dev rollup -c -w",
-    "build": "rimraf dist && cross-env NODE_ENV=production rollup -c"
+    "build": "rm -rf ./dist && cross-env NODE_ENV=production rollup -c"
   },
   "keywords": [
     ""

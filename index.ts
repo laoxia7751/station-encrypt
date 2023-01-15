@@ -1,8 +1,8 @@
 /*
  * @Author: xiajitao xiajitao@genew.com
  * @Date: 2023-01-09 19:04:24
- * @LastEditors: xiajitao xiajitao@genew.com
- * @LastEditTime: 2023-01-13 09:37:34
+ * @LastEditors: xjt
+ * @LastEditTime: 2023-01-15 13:22:55
  * @Description: 一个站点反爬工具
  */
 
@@ -51,10 +51,8 @@ class StationEncrypt {
    * 禁止ctrl+s保存网页
    */
   disabledSave() {
-    window.onload = function () {
       document.onkeydown = function () {
         var e = window.event || arguments[0];
-        console.log('StationEncrypt ~ disabledSave ~ e', e);
         if (e.keyCode == 123) {
           return false;
         } else if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
@@ -63,9 +61,10 @@ class StationEncrypt {
           return false;
         } else if (e.ctrlKey && e.keyCode == 83) {
           return false;
+        } else if (e.metaKey && e.keyCode == 83){
+          return false;
         }
       };
-    };
   }
 
   /**
