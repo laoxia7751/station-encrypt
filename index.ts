@@ -2,14 +2,14 @@
  * @Author: xiajitao xiajitao@genew.com
  * @Date: 2023-01-09 19:04:24
  * @LastEditors: xjt
- * @LastEditTime: 2023-01-15 13:22:55
+ * @LastEditTime: 2023-01-15 15:57:24
  * @Description: 一个站点反爬工具
  */
 
 class StationEncrypt {
   publicUrl: string;
   homePage: string;
-  constructor({ publicUrl = './', homePage = 'index.html', disabledSave = true, disabledConsole = true }) {
+  constructor({ publicUrl='', homePage = 'index.html', disabledSave = true, disabledConsole = true }) {
     this.publicUrl = publicUrl;
     this.homePage = homePage;
     // 禁止保存
@@ -39,8 +39,8 @@ class StationEncrypt {
   createFrame(html: string) {
     document.body.style.cssText = 'margin:0;padding:0;';
     const iframe = document.createElement('iframe');
-    iframe.style.cssText = 'width: 100%; height: calc(100vh - 4px); overflow: hidden; border:none;';
-    const newHtml = html.replace(/<head>/g, `<head><base href="${window.location.origin}/${this.publicUrl}" />`);
+    iframe.style.cssText = 'width: 100%; height: calc(100vh - 4px); overflow: hidden; border:none;'; 
+    const newHtml = html.replace(/<head>/g, `<head><base href="${window.location.origin}${this.publicUrl}" />`);
     document.body.appendChild(iframe);
     iframe.contentWindow?.document?.open();
     iframe.contentWindow?.document?.write(newHtml);
