@@ -47,7 +47,7 @@ export default [
       {
         format: 'iife',
         name: 'StationEncrypt',
-        file: 'dist/station-encrypt.min.js'
+        file: 'docs/station-encrypt.min.js'
       },
     ],
     plugins: [

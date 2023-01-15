@@ -2,7 +2,7 @@
  * @Author: xiajitao xiajitao@genew.com
  * @Date: 2023-01-09 19:04:24
  * @LastEditors: xjt
- * @LastEditTime: 2023-01-15 15:57:24
+ * @LastEditTime: 2023-01-15 16:50:20
  * @Description: 一个站点反爬工具
  */
 
@@ -53,6 +53,7 @@ class StationEncrypt {
   disabledSave() {
       document.onkeydown = function () {
         var e = window.event || arguments[0];
+        console.log(e)
         if (e.keyCode == 123) {
           return false;
         } else if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
